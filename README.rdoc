@@ -1,3 +1,58 @@
 = ref_issue
 
-Description goes here
+redmine の Wiki に チケットの内容を表示するプラグインです
+
+
+== install
+
+Download します
+https://github.com/quwahara/ref_issue/archive/master.zip
+
+ファイルを解凍します
+ref_issue-master
+というディレクトリができると思います
+
+
+そのディレクトリをredmine の plugins ディレクトリにコピーします
+
+
+redmine を再起動します
+
+redmine にログインし、管理 ＞ プラグイン ページへ行き、Ref Issue plugin があれば、インストールは完了です
+
+
+== 対応する redmine のバージョン
+
+2.1.5
+(多分、2.1系なら動くと思われます)
+
+
+== 使い方
+
+wiki に下のように記述します。
+いずれも引数にチケット番号を指定します。
+
+{{issue_assigned_lastname(1)}} 担当者の姓を取得します
+
+{{issue_status(1)}} ステータスを取得します
+
+{{issue_created_on_date(1)}} 登録日を取得します
+
+{{issue_updated_on_date(1)}} 更新日を取得します
+
+
+== License 
+
+MITライセンスで公開します
+以下がその全文です
+
+The MIT License (MIT)
+
+Copyright (c) 2013 mitsuaki kuwahara
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
